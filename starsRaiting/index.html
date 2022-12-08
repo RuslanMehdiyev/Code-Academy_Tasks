@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+    div {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      direction: rtl;
+    }
+    i{
+        font-size: 5rem;
+    }
+    i:hover {
+      background-color: yellow;
+      cursor: pointer;
+    }
+    .s1:hover ~ i {
+      background-color: yellow;
+    }
+    .s2:hover ~ i {
+      background-color: yellow;
+    }
+    .s3:hover ~ i {
+      background-color: yellow;
+    }
+    .s4:hover ~ i {
+      background-color: yellow;
+    }
+    .s5:hover ~ i {
+      background-color: yellow;
+    }
+  </style>
+  <body>
+    <div>
+      <ul>
+        <i id="stars" class="fa-regular fa-star s1"></i>
+        <i id="stars" class="fa-regular fa-star s2"></i>
+        <i id="stars" class="fa-regular fa-star s3"></i>
+        <i id="stars" class="fa-regular fa-star s4"></i>
+        <i id="stars" class="fa-regular fa-star s5"></i>
+      </ul>
+    </div>
+  </body>
+  <script>
+    let stars = document.querySelectorAll(".fa-star")
+    stars.forEach(e=>{
+        e.addEventListener("click",()=>{
+            e.style.backgroundColor = "yellow"
+        })
+    })
+
+    //ajax 
+  </script>
+</html>
